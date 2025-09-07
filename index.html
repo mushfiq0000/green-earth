@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Earth</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- connect style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- connect Tailwind and daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-[#15803d] fixed w-full">
+      <div
+        class="mx-auto px-8 py-4 flex justify-between items-center text-white"
+      >
+        <h1>🌱Green Earth</h1>
+        <nav class="space-x-5 hidden sm:block">
+          <a href="" class="hover:border-b">About</a>
+          <a href="" class="hover:border-b">Gallery</a>
+          <a href="" class="hover:border-b">Plant a Tree</a>
+        </nav>
+        <button class="btn btn-warning rounded-3xl text-[#15803d]">
+          Plant a Tree
+        </button>
+      </div>
+    </header>
+
+    <section class="bg-[#cff0dc] flex justify-between items-center pt-23">
+      <img src="./assets/hero-leaf1.png" alt="" class="hidden sm:block"/>
+      <div class="text-center space-y-3">
+        <h2 class="text-4xl font-bold">Plant a Tree, Grow a Future</h2>
+        <p class="text-xs text-gray-500 ">
+          Join our mission to plant 1 million trees and make the Earth greener
+          for future <br> generations.
+        </p>
+        <button class="btn btn-warning rounded-3xl text-[#15803d] mb-7">
+          Get Involved
+        </button>
+      </div>
+      <img src="./assets/hero-leaf2.png" alt="" class="hidden sm:block"/>
+    </section>
+
+    <main></main>
+
+    <footer></footer>
+
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
