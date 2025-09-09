@@ -189,7 +189,7 @@ const displayModal = (data) => {
 
 const showLoading  = () => {
     cardContainer.innerHTML = `
-    <div class="loading loading-spinner text-neutral pr-15  md:pr-20 md:mx-180"></div>
+    <div class="loading loading-spinner text-neutral md:mx-180"></div>
     `
 }
 
