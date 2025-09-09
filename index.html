@@ -56,28 +56,49 @@
       class="bg-[#cff0dc] flex flex-col sm:flex-row justify-between items-center pt-23"
     >
       <img src="./assets/hero-leaf1.png" alt="" class="" />
-      <div class="text-center space-y-3 py-4">
+      <div class="text-center space-y-3 py-4 mt-5">
         <h2 class="text-4xl font-bold">Plant a Tree, Grow a Future</h2>
         <p class="text-xs text-gray-500">
           Join our mission to plant 1 million trees and make the Earth greener
           for future <br />
           generations.
         </p>
-        <button class="btn btn-warning rounded-3xl text-[#15803d] mb-7">
+        <button class="btn btn-warning rounded-3xl text-[#15803d] mb-5">
           Get Involved
         </button>
       </div>
       <img src="./assets/hero-leaf2.png" alt="" class="" />
     </section>
 
+
+
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+<dialog id="modalDialog" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal_contant"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    </section>
+
+
+
+
     <!-- Functionalities section -->
 
     <main class="bg-[#f0fdf4] pt-10">
-      <p class="text-4xl font-bold text-center pb-2">Choose Your Trees</p>
 
+      <p class="text-4xl font-bold text-center pb-2">Choose Your Trees</p>
       <section class="flex flex-col md:flex-row justify-between p-5 space-x-5">
+          
         <!-- Categories section -->
-        <div id="categories-list" class="md:w-3/12 flex flex-col pl-6 mb-4">
+        <div id="categories-list" class="md:w-2/12 flex flex-col pl-6 mb-4">
           <span class="text-xl font-bold pb-3">Categories</span>
           <p
             id="categories-all"
@@ -93,7 +114,9 @@
         <section
           id="card-container"
           class="grid grid-col-1 w-full md:grid-cols-3 gap-5 px-4 md:w-11/12 mb-5"
-        ></section>
+        >
+        <div class="loading loading-spinner text-neutral pr-15  md:pr-20 md:mx-180"></div>
+      </section>
 
         <!-- Cart section -->
 
@@ -111,72 +134,95 @@
           </div>
         </section>
       </section>
-
+      
       <section class="pt-20">
         <h2 class="text-4xl font-bold text-center">About the Campaign</h2>
-
+        
         <div
-          class="flex flex-col md:flex-row justify-center items-center pb-36 gap-8 mt-20"
+        class="flex flex-col md:flex-row justify-center items-center pb-36 gap-8 mt-20"
         >
-          <img src="./assets/about.png" alt="" class="p-4" />
-          <div class="md:w-3/12 p-4">
-            <p class="text-gray-600">
-              Green Earth is a global tree plantation initiative dedicated to
-              fighting climate change.Since our start, we’ve planted over
-              500,000 trees worldwide.By joining our campaign,you help restore
-              forests,create habitats for wildlife,and combat global warming.
-            </p>
-
-            <ul class="list-disc list-inside space-y-2 text-gray-600 pt-2">
-              <li>Restoration of natural habitats</li>
-              <li>Improvement of air quality</li>
-              <li>Support for local communities</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-[#cff0dc] py-15">
-        <h2 class="text-center font-semibold text-3xl py-8">Our Impact</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 w-11/12 mx-auto">
-          <div
-            class="py-8 px-10 bg-white rounded-xl flex flex-col justify-center items-center"
-          >
-            <h1 class="text-[#15803d] font-semibold text-3xl">500K+</h1>
-            <p class="text-[#4c545f]">Trees Planted</p>
-          </div>
-          <div
-            class="py-8 px-10 bg-white rounded-xl flex flex-col justify-center items-center"
-          >
-            <h1 class="text-[#15803d] font-semibold text-3xl">120+</h1>
-            <p class="text-[#4c545f]">Communities Involved</p>
-          </div>
-          <div
-            class="py-8 px-10 bg-white rounded-xl flex flex-col justify-center items-center"
-          >
-            <h1 class="text-[#15803d] font-semibold text-3xl">30+</h1>
-            <p class="text-[#4c545f]">Countries Reached</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer></footer>
-
-    <!-- Open the modal using ID.showModal() method -->
-
-    <dialog id="modalDialog" class="modal modal-bottom sm:modal-middle">
-      <div class="modal-box">
-        <div id="modal_contant"></div>
-        <div class="modal-action">
-          <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close</button>
-          </form>
+        <img src="./assets/about.png" alt="" class="p-4" />
+        <div class="md:w-3/12 p-4">
+          <p class="text-gray-600">
+            Green Earth is a global tree plantation initiative dedicated to
+            fighting climate change.Since our start, we’ve planted over
+            500,000 trees worldwide.By joining our campaign,you help restore
+            forests,create habitats for wildlife,and combat global warming.
+          </p>
+          
+          <ul class="list-disc list-inside space-y-2 text-gray-600 pt-2">
+            <li>Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+          </ul>
         </div>
       </div>
-    </dialog>
+    </section>
+    
+    <section class="bg-[#cff0dc] py-15">
+      <h2 class="text-4xl font-bold text-center py-8">Our Impact</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 w-11/12 mx-auto">
+        <div
+        class="flex flex-col justify-center items-center bg-white  py-9 rounded-lg "
+        >
+        <h1 class="text-3xl text-[#15803D] font-semibold ">500K+</h1>
+        <p class="text-gray-600 text-m">Trees Planted</p>
+      </div>
+      <div
+      class="flex flex-col justify-center items-center bg-white  py-9 rounded-lg"
+      >
+      <h1 class="text-3xl text-[#15803D] font-semibold">120+</h1>
+      <p class="text-gray-600">Communities Involved</p>
+    </div>
+    <div
+    class="flex flex-col justify-center items-center bg-white  py-9 rounded-lg"
+    >
+    <h1 class="text-3xl text-[#15803D] font-semibold">30+</h1>
+    <p class="text-gray-600">Countries Reached</p>
+  </div>
+</div>
+</section>
 
-    <script src="./JS/script.js"></script>
-  </body>
+<form action="" class="p-20 bg-[#15803d] flex justify-center items-center bg-[#166534]">
+  
+  
+  
+  <fieldset class="fieldset shadow-md rounded-box w-lg  p-4  bg-[#15803d]">
+    
+    
+    
+    
+    <input type="text" class="input w-full" placeholder="Name" />
+    
+    <input type="email" class="input w-full" placeholder="Your Email Address" />
+    
+    <select
+    id="bank"
+    class="select w-full"
+    >
+    <option disabled selected>Number of Trees</option>
+    <option>10 Trees</option>
+    <option>20 Trees</option>
+    <option>30 Trees</option>
+    <option>More Trees</option>
+  </select>
+  
+  <button type="" class="btn btn-warning rounded-3xl text-[#15803d]  mt-2">Donate Now</button>
+</fieldset>
+
+</form>
+</main>
+
+<footer>
+  
+</footer>
+
+
+
+
+
+
+<script src="./JS/script.js"></script>
+</body>
 </html>
+
