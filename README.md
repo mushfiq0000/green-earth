@@ -1,7 +1,7 @@
 # 🌍 Green Earth – Environmental Awareness Website
 
-**Live Demo:** [https://charming-narwhal-1539f0.netlify.app/](https://charming-narwhal-1539f0.netlify.app/)  
-**GitHub Repo:** [https://github.com/mushfiq0000/green-earth](https://github.com/mushfiq0000/green-earth)
+**Live Demo:** [Link](https://charming-narwhal-1539f0.netlify.app/)  
+**GitHub Repo:** [Link](https://github.com/mushfiq0000/green-earth)
 
 ---
 
